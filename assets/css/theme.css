@@ -18020,7 +18020,7 @@ Styled shaped wrappers for displaying code and images in a more stylish manner
 
 .navbar-nav .nav-link
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: .875rem;
     font-weight: 600;
 
@@ -20558,7 +20558,7 @@ article h5 + figure
 .countdown .countdown-digit,
 .countdown .countdown-label
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Oswald', sans-serif; 
     font-weight: 300;
 }
 
@@ -20604,7 +20604,7 @@ article h5 + figure
 
 .countdown--style-1 .countdown-digit
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Oswald', sans-serif; 
     font-size: 22px;
     font-weight: 400;
     line-height: 60px;
@@ -20622,7 +20622,7 @@ article h5 + figure
 
 .countdown--style-1 .countdown-label
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 13px;
     font-weight: 500;
 
