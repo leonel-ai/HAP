@@ -193,10 +193,121 @@
         </a>
     </section>
 
-    <section class="slice slice-lg" id="sct-faq" style="padding-top:3rem !important;">
+    <section class="slice slice-lg cd-main-content" id="sct-faq" style="padding-top:3rem !important;">
         <div class="container">
             <div class="row row-grid">
-                <div class="col-lg-3">
+                <div class="col-lg-3 controls" id="sidebar">
+                  <!-- begin phase -->
+                    <div class="list-group">
+                        <a href="#menu1" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                            <span class="hidden-sm-down"><i class="fa fa-minus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Phase</span>
+                        </a>
+                        <div class="collapse checkbox-group" id="menu1">
+                            <div class="list-group-item" data-parent="#menu1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" value=".preparedness" for="customCheck1">Preparedness</label>
+                                </div>
+                            </div>
+                            <div class="list-group-item" data-parent="#menu1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" value=".response" for="customCheck2">Response</label>
+                              </div>
+                            </div>
+                            <div class="list-group-item" data-parent="#menu1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" value=".recovery" for="customCheck3">Recovery</label>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    <!-- <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck0">
+                        <label class="custom-control-label" value="all" for="customCheck0">Clear All</label>
+                    </div> -->
+
+                  <!-- begin level -->
+                  <div class="list-group">
+                      <a href="#menu2" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                          <span class="hidden-sm-down"><i class="fa fa-minus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Level</span>
+                      </a>
+                      <div class="collapse checkbox-group" id="menu2">
+                          <div class="list-group-item" data-parent="#menu2">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck4">
+                              <label class="custom-control-label" value=".state-nat" for="customCheck4">State/National</label>
+                              </div>
+                          </div>
+                          <div class="list-group-item" data-parent="#menu2">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck5">
+                              <label class="custom-control-label" value=".county-city" for="customCheck5">County/City</label>
+                            </div>
+                          </div>
+                          <div class="list-group-item" data-parent="#menu2">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck6">
+                              <label class="custom-control-label" value=".nonprofit" for="customCheck6">Nonprofit</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                <!-- begin approach -->
+                  <div class="list-group">
+                      <a href="#menu3" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                          <span class="hidden-sm-down"><i class="fa fa-minus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Approach</span>
+                      </a>
+                      <div class="collapse checkbox-group" id="menu3">
+                          <div class="list-group-item" data-parent="#menu3">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck7">
+                              <label class="custom-control-label" value=".state-nat" for="customCheck7">Policy</label>
+                              </div>
+                          </div>
+                          <div class="list-group-item" data-parent="#menu3">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck8">
+                              <label class="custom-control-label" value=".county-city" for="customCheck8">Programs/Ops</label>
+                            </div>
+                          </div>
+                          <div class="list-group-item" data-parent="#menu3">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck9">
+                              <label class="custom-control-label" value=".nonprofit" for="customCheck9">Funding</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                  <!-- begin theme -->
+                  <div class="list-group">
+                      <a href="#menu4" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                          <span class="hidden-sm-down"><i class="fa fa-minus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Theme</span>
+                      </a>
+                      <div class="collapse checkbox-group" id="menu4">
+                          <div class="list-group-item" data-parent="#menu4">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck10">
+                              <label class="custom-control-label" value=".state-nat" for="customCheck10">Inclusive Communications</label>
+                              </div>
+                          </div>
+                          <div class="list-group-item" data-parent="#menu4">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck11">
+                              <label class="custom-control-label" value=".county-city" for="customCheck11">Accessible Resources</label>
+                            </div>
+                          </div>
+                          <div class="list-group-item" data-parent="#menu4">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="customCheck12">
+                              <label class="custom-control-label" value=".nonprofit" for="customCheck12">Culturally Informed Approaches</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
 
                     <!-- Begin phase -->
                     <table class="table table-hover align-items-center">
@@ -209,55 +320,56 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="bg-white" scope="row">
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input"
-                                            id="td_checkbox_phase_1">
-                                        <label class="custom-control-label" for="td_checkbox_phase_1"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <span class="font-weight-normal text-muted">Preparedness</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white" scope="row">
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input"
-                                            id="td_checkbox_phase_2">
-                                        <label class="custom-control-label" for="td_checkbox_phase_2"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <span class="font-weight-normal text-muted">Response</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-white" scope="row">
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input"
-                                            id="td_checkbox_phase_3">
-                                        <label class="custom-control-label" for="td_checkbox_phase_3"></label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="media align-items-center">
-                                        <div class="media-body">
-                                            <span class="font-weight-normal text-muted">Recovery</span>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
+                          <tr class="bg-white" scope="row">
+                              <td>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input"
+                                          id="td_checkbox_phase_1">
+                                      <label class="custom-control-label" for="td_checkbox_phase_1"></label>
+                                  </div>
+                              </td>
+                              <td>
+                                  <div class="media align-items-center">
+                                      <div class="media-body">
+                                          <span class="font-weight-normal text-muted">Preparedness</span>
+                                      </div>
+                                  </div>
+                              </td>
+                          </tr>
 
+                          <tr class="bg-white" scope="row">
+                              <td>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input"
+                                          id="td_checkbox_phase_2">
+                                      <label class="custom-control-label" for="td_checkbox_phase_2"></label>
+                                  </div>
+                              </td>
+                              <td>
+                                  <div class="media align-items-center">
+                                      <div class="media-body">
+                                          <span class="font-weight-normal text-muted">Response</span>
+                                      </div>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr class="bg-white" scope="row">
+                              <td>
+                                  <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input"
+                                          id="td_checkbox_phase_3">
+                                      <label class="custom-control-label" for="td_checkbox_phase_3"></label>
+                                  </div>
+                              </td>
+                              <td>
+                                  <div class="media align-items-center">
+                                      <div class="media-body">
+                                          <span class="font-weight-normal text-muted">Recovery</span>
+                                      </div>
+                                  </div>
+                              </td>
+                          </tr>
 
                         </tbody>
                     </table>
@@ -322,7 +434,6 @@
                         </tbody>
                     </table>
                     <!--End level -->
-
 
                     <!--Begin approach -->
                     <table class="table table-hover align-items-center">
@@ -450,11 +561,14 @@
                     </table>
                     <!--End theme -->
 
+
                 </div>
 
 
+
+
                 <div class="col-lg-8 ml-lg-auto">
-                    <div class="mt-4"><span style="font-size:11px;">42 Recommendations &nbsp; &nbsp;</span>
+                    <div class="mt-4"><span style="font-size:11px;"><span>42</span> Recommendations &nbsp; &nbsp;</span>
                         <a href="#" class="badge badge-lg badge-pill badge-danger"><span style="font-size:11px;">x
                             </span>Breadcrumbs</a>
                         <a href="#" class="badge badge-lg badge-pill badge-danger"><span style="font-size:11px;">x
@@ -702,14 +816,62 @@
     <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/in-view/dist/in-view.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
 
+    <script>
+        // Must bind a 'change' event handler to
+        // checkboxes, then interact with the mixer via
+        // its .filter() API methods.
 
+        var containerEl = document.querySelector('.container');
+        var checkboxGroup = document.querySelector('.checkbox-group');
+        var checkboxes = checkboxGroup.querySelectorAll('input[type="checkbox"]');
+        var allCheckbox = checkboxGroup.querySelector('input[value="all"]');
 
+        var mixer = mixitup(containerEl);
+
+        checkboxGroup.addEventListener('change', function(e) {
+            var selectors = [];
+            var checkbox;
+            var i;
+
+            if (e.target === allCheckbox && e.target.checked) {
+                // If the "all" checkbox was checked, uncheck all other checkboxes
+
+                for (i = 0; i < checkboxes.length; i++) {
+                    checkbox = checkboxes[i];
+
+                    if (checkbox !== allCheckbox) checkbox.checked = false;
+                }
+            } else {
+                // Another checkbox was changed, uncheck "all".
+
+                allCheckbox.checked = false;
+            }
+
+            // Iterate through all checkboxes, pushing the
+            // values of those that are checked into an array
+
+            for (i = 0; i < checkboxes.length; i++) {
+                checkbox = checkboxes[i];
+
+                if (checkbox.checked) selectors.push(checkbox.value);
+            }
+
+            // If there are values in the array, join it into a string
+            // using your desired logic, and send to the mixer's .filter()
+            // method, otherwise filter by 'all'
+
+            var selectorString = selectors.length > 0 ?
+                selectors.join(',') : // or '.' for AND logic
+                'all';
+
+            mixer.filter(selectorString);
+        });
+    </script>
 
     <!-- Page plugins -->
     <script src="../assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-
-
 
     <!-- Theme JS -->
 

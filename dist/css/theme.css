@@ -85,7 +85,7 @@ section
 
 body
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.7;
@@ -6934,7 +6934,7 @@ button.close
 
 .tooltip
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: .875rem;
     font-weight: 400;
     font-style: normal;
@@ -7081,7 +7081,7 @@ button.close
 
 .popover
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: .875rem;
     font-weight: 400;
     font-style: normal;
@@ -12241,7 +12241,7 @@ html
 
 body
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.7;
 
@@ -14206,7 +14206,7 @@ button.bg-lighter:focus
 }
 [data-accordion='1'] .card-header:after
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700; 
 
     position: absolute;
@@ -18020,7 +18020,7 @@ Styled shaped wrappers for displaying code and images in a more stylish manner
 
 .navbar-nav .nav-link
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: .875rem;
     font-weight: 600;
 
@@ -19167,8 +19167,8 @@ section
 
 .slice-lg
 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .slice-sm
@@ -19943,7 +19943,10 @@ h3,
 .h2,
 .h3
 {
+    font-family: 'Oswald', sans-serif !important;
     font-weight: 500;
+
+    test-transform: uppercase;
 }
 
 h4,
@@ -20555,7 +20558,7 @@ article h5 + figure
 .countdown .countdown-digit,
 .countdown .countdown-label
 {
-    font-family: 'Work Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif; 
     font-weight: 300;
 }
 
@@ -20601,7 +20604,7 @@ article h5 + figure
 
 .countdown--style-1 .countdown-digit
 {
-    font-family: 'Work Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif; 
     font-size: 22px;
     font-weight: 400;
     line-height: 60px;
@@ -20619,7 +20622,7 @@ article h5 + figure
 
 .countdown--style-1 .countdown-label
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     font-weight: 500;
 
@@ -21734,4 +21737,25 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 .swiper-button.swiper-button-next
 {
     margin-left: 10px;
+}
+
+bg-gradient-primary
+{
+    background: #e8453a;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+    font-family: 'Oswald', sans-serif !important;
+
+    text-transform: uppercase;
+}
+
+.list-group a
+{
+    color: white; 
+    background-color: #e8453a !important;
 }
