@@ -10,8 +10,20 @@ h1, h2, h3, h4 {
 }
 
 // filter sidebar
-.list-group a {
-  background-color:#e8453a !important;
-  color: white;
+.list-group {
+  a {
+    background-color:#e8453a !important;
+    color: white;
+    font-weight: 700;
+    font-size: .875rem;
+    .hidden-sm-down i {
+      padding-right: 3rem;
+    }
+  }
+  .custom-control-label{
+    font-size: .875rem;
+    padding-left: 2rem;
+  }
 }
+
 
