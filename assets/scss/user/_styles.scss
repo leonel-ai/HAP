@@ -26,4 +26,84 @@ h1, h2, h3, h4 {
   }
 }
 
+.rec-gallery {
+  width: 100%;
+  padding: 2%;
+  min-height: 400px;
+  text-align: justify;
+  position: relative;
+
+  .mix, .gap {
+    width: 100px;
+    display: inline-block;
+    margin: 0 5%;
+  }
+
+	li {
+		margin-bottom: 1.6em;
+		box-shadow: 0 1px 4px rgba(#000, .1);
+		display: none;
+
+		&.gap {
+			/* used in combination with text-align: justify to align gallery elements */
+			opacity: 0;
+			height: 0;
+			display: inline-block;
+		}
+  }
+
+  .rec-fail-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+
+    -webkit-transition: 150ms;
+    -moz-transition: 150ms;
+    transition: 150ms;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+
+  .mixitup-container-failed .rec-fail-message {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  // @include MQ(M) {
+	// 	padding: 40px 3%;
+
+	// 	ul {
+	// 		@include clearfix;
+	// 		text-align: justify;
+	// 	}
+
+	// 	li {
+	// 		width: 48%;
+	// 		margin-bottom: 2em;
+	// 	}
+	// }
+
+	// @include MQ(L) {
+	// 	padding: 50px 2%;
+	// 	float: right;
+	// 	@include transition(width .3s);
+
+	// 	li {
+	// 		width: 23%;
+	// 	}
+	// }
+}
+
+
+
 

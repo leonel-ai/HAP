@@ -21773,3 +21773,68 @@ h4
 
     padding-left: 2rem;
 }
+
+.rec-gallery
+{
+    position: relative; 
+
+    width: 100%;
+    min-height: 400px;
+    padding: 2%;
+
+    text-align: justify;
+}
+.rec-gallery .mix,
+.rec-gallery .gap
+{
+    display: inline-block;
+
+    width: 100px;
+    margin: 0 5%;
+}
+.rec-gallery li
+{
+    display: none; 
+
+    margin-bottom: 1.6em;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+}
+.rec-gallery li.gap
+{
+    display: inline-block; 
+
+    height: 0;
+    /* used in combination with text-align: justify to align gallery elements */
+
+    opacity: 0;
+}
+.rec-gallery .rec-fail-message
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transition: 150ms; 
+    text-align: center;
+    pointer-events: none;
+
+    opacity: 0;
+}
+.rec-gallery .rec-fail-message:before
+{
+    display: inline-block;
+
+    height: 100%; 
+
+    content: '';
+    vertical-align: middle;
+}
+.rec-gallery .mixitup-container-failed .rec-fail-message
+{
+    pointer-events: auto; 
+
+    opacity: 1;
+}

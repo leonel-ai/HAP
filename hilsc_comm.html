@@ -196,59 +196,57 @@
     <section class="slice slice-lg cd-main-content" id="sct-faq" style="padding-top:3rem !important;">
         <div class="container">
             <div class="row row-grid">
-                <div class="col-lg-3 controls" id="sidebar">
+
+                <div class="col-lg-3 controls" id="filters">
+
                   <!-- begin phase -->
                     <div class="list-group">
-                        <a href="#menu1" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                        <a href="#menu1" class="list-group-item" data-toggle="collapse" data-parent="#filters">
                             <span class="hidden-sm-down"><i class="fa fa-minus"></i>Phase</span>
                         </a>
                         <div class="collapse checkbox-group" id="menu1">
                             <div class="list-group-item" data-parent="#menu1">
                               <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" value=".preparedness" for="customCheck1">Preparedness</label>
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" data-toggle=".prep">
+                                <label class="custom-control-label" value=".prep" for="customCheck1">Preparedness</label>
                                 </div>
                             </div>
                             <div class="list-group-item" data-parent="#menu1">
                               <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" data-toggle=".response">
                                 <label class="custom-control-label" value=".response" for="customCheck2">Response</label>
                               </div>
                             </div>
                             <div class="list-group-item" data-parent="#menu1">
                               <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3" data-toggle=".recovery">
                                 <label class="custom-control-label" value=".recovery" for="customCheck3">Recovery</label>
                               </div>
                             </div>
                         </div>
                       </div>
-                    <!-- <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck0">
-                        <label class="custom-control-label" value="all" for="customCheck0">Clear All</label>
-                    </div> -->
 
                   <!-- begin level -->
                   <div class="list-group">
-                      <a href="#menu2" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                      <a href="#menu2" class="list-group-item" data-toggle="collapse" data-parent="#filters">
                           <span class="hidden-sm-down"><i class="fa fa-minus"></i>Level</span>
                       </a>
                       <div class="collapse checkbox-group" id="menu2">
                           <div class="list-group-item" data-parent="#menu2">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck4">
+                              <input type="checkbox" class="custom-control-input" id="customCheck4" data-toggle=".state-nat">
                               <label class="custom-control-label" value=".state-nat" for="customCheck4">State/National</label>
                               </div>
                           </div>
                           <div class="list-group-item" data-parent="#menu2">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck5">
+                              <input type="checkbox" class="custom-control-input" id="customCheck5" data-toggle=".county-city">
                               <label class="custom-control-label" value=".county-city" for="customCheck5">County/City</label>
                             </div>
                           </div>
                           <div class="list-group-item" data-parent="#menu2">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck6">
+                              <input type="checkbox" class="custom-control-input" id="customCheck6" data-toggle=".nonprofit">
                               <label class="custom-control-label" value=".nonprofit" for="customCheck6">Nonprofit</label>
                             </div>
                           </div>
@@ -257,26 +255,26 @@
 
                 <!-- begin approach -->
                   <div class="list-group">
-                      <a href="#menu3" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                      <a href="#menu3" class="list-group-item" data-toggle="collapse" data-parent="#filters">
                           <span class="hidden-sm-down"><i class="fa fa-minus"></i>Approach</span>
                       </a>
                       <div class="collapse checkbox-group" id="menu3">
                           <div class="list-group-item" data-parent="#menu3">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck7">
-                              <label class="custom-control-label" value=".state-nat" for="customCheck7">Policy</label>
+                              <input type="checkbox" class="custom-control-input" id="customCheck7" data-toggle=".policy">
+                              <label class="custom-control-label" value=".policy" for="customCheck7">Policy</label>
                               </div>
                           </div>
                           <div class="list-group-item" data-parent="#menu3">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck8">
-                              <label class="custom-control-label" value=".county-city" for="customCheck8">Programs/Ops</label>
+                              <input type="checkbox" class="custom-control-input" id="customCheck8" data-toggle=".program-op">
+                              <label class="custom-control-label" value=".program-op" for="customCheck8">Programs/Ops</label>
                             </div>
                           </div>
                           <div class="list-group-item" data-parent="#menu3">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck9">
-                              <label class="custom-control-label" value=".nonprofit" for="customCheck9">Funding</label>
+                              <input type="checkbox" class="custom-control-input" id="customCheck9" data-toggle=".funding">
+                              <label class="custom-control-label" value=".funding" for="customCheck9">Funding</label>
                             </div>
                           </div>
                       </div>
@@ -284,26 +282,26 @@
 
                   <!-- begin theme -->
                   <div class="list-group">
-                      <a href="#menu4" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
+                      <a href="#menu4" class="list-group-item" data-toggle="collapse" data-parent="#filters">
                           <span class="hidden-sm-down"><i class="fa fa-minus"></i>Theme</span>
                       </a>
                       <div class="collapse checkbox-group" id="menu4">
                           <div class="list-group-item" data-parent="#menu4">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck10">
-                              <label class="custom-control-label" value=".state-nat" for="customCheck10">Inclusive Communications</label>
+                              <input type="checkbox" class="custom-control-input" id="customCheck10" data-toggle=".inclusive">
+                              <label class="custom-control-label" value=".inclusive" for="customCheck10">Inclusive Communications</label>
                               </div>
                           </div>
                           <div class="list-group-item" data-parent="#menu4">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck11">
-                              <label class="custom-control-label" value=".county-city" for="customCheck11">Accessible Resources</label>
+                              <input type="checkbox" class="custom-control-input" id="customCheck11" data-toggle=".accessible">
+                              <label class="custom-control-label" value=".accessible" for="customCheck11">Accessible Resources</label>
                             </div>
                           </div>
                           <div class="list-group-item" data-parent="#menu4">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck12">
-                              <label class="custom-control-label" value=".nonprofit" for="customCheck12">Culturally Informed Approaches</label>
+                              <input type="checkbox" class="custom-control-input" id="customCheck12" data-toggle=".culture">
+                              <label class="custom-control-label" value=".culture" for="customCheck12">Culturally Informed Approaches</label>
                             </div>
                           </div>
                       </div>
@@ -329,14 +327,15 @@
                     <div class="mb-md">
                         <!-- <h2 class="mb-4" id="section_1">Preparation</h4> -->
                         <div class="py-4 border-bottom">
-                            <div style="background-color:#f5f9fb;">
+                            <!-- <div style="background-color:#f5f9fb;"> -->
+
                                 <!-- BEGIN RECC ITEM -->
-                                <div style="background-color: #0973ba; padding:30px;border-radius: 10px 10px 0 0;">
+                                <!-- <div style="background-color: #0973ba; padding:30px;border-radius: 10px 10px 0 0;">
                                     <h4 class="mb-3" style="color:#f5f9fb; font-family:'Oswald';font-size:2rem;"><i
                                             class="fas fa-clipboard-list"></i><span style="font-size:1.4rem;">
-                                            PREPARATION #1</span></h4>
+                                            PREPARATION #1</span></h4> -->
                                     <!-- <hr style="border-color:white; width:15%;margin-right:85%;border-width:2px;"/> -->
-                                    <p class="mb-0" style="font-weight:400;color:white"><span
+                                    <!-- <p class="mb-0" style="font-weight:400;color:white"><span
                                             style="font-weight:700;font-size:.8rem;">RECOMMENDATION: </span>Suspend
                                         immigration enforcement within disaster zones, including operations at
                                         Customs and Border Patrol check points, to ensure people move safe safely
@@ -344,12 +343,12 @@
                                     </p>
                                     <p style="font-weight:400;color:white; margin-top:1.2rem;"><span
                                             style="font-weight:700; font-size:.8rem;">PROPOSED IMPLEMENTERS:</span>
-                                        United States Customs and Border Patrol</p>
-                                </div>
+                                        United States Customs and Border Patrol</p> -->
+                                <!-- </div> -->
 
 
                                 <!-- BEGIN RATIONALE -->
-                                <div style="padding:30px;">
+                                <!-- <div style="padding:30px;">
                                     <p class="mb-0" style="font-weight:400;"><strong>— &nbsp; RATIONALE:</strong>
                                     </p>
                                     <p class="mb-0" style="font-weight:400;">After Harvey, there was wide-spread
@@ -370,10 +369,10 @@
                                     <script src="../assets/js/chart1.js"></script>
 
 
-                                </div>
+                                </div> -->
 
                                 <!-- BEGIN TAGS -->
-                                <div style="background-color:gainsboro;padding:30px;">
+                                <!-- <div style="background-color:gainsboro;padding:30px;">
                                     <div class="row pt-md" style="padding-top:0 !important;">
                                         <div class="col-lg-3">
                                             <span
@@ -400,25 +399,66 @@
                                     <div class="row pt-md" style="padding-top:0 !important;">
 
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- END TAGS -->
-                            </div>
+                            <!-- </div> -->
                         </div>
 
                         <div class="py-4 border-bottom">
+                          <div class="container rec-gallery">
+                            <ul id="rec-container">
+                              <li class="mix prep policy accessible">Plan 1</li>
+                              <li class="mix prep policy accessible">Plan 2</li>
+                              <li class="mix prep policy inclusive">Plan 3</li>
+                              <li class="mix prep policy inclusive">Plan 4</li>
+                              <li class="mix prep program-op accessible">Plan 5</li>
+                              <li class="mix prep nonprofit program-op culture">Plan 6</li>
+                              <li class="mix prep program-op accessible">Plan 7</li>
+                              <li class="mix prep program-op accessible">Plan 8</li>
+                              <li class="mix prep program-op accessible">Plan 9</li>
+                              <li class="mix response policy accessible">Plan 10</li>
+                              <li class="mix response policy accessible">Plan 11</li>
+                              <li class="mix response policy accessible">Plan 12</li>
+                              <li class="mix response policy accessible">Plan 13</li>
+                              <li class="mix response policy inclusive">Plan 14</li>
+                              <li class="mix response program-op inclusive">Plan 15</li>
+                              <li class="mix response policy inclusive">Plan 16</li>
+                              <li class="mix response policy inclusive">Plan 17</li>
+                              <li class="mix response policy nonprofit inclusive">Plan 18</li>
+                              <li class="mix recovery program-op accessible">Plan 19</li>
+                              <li class="mix recovery policy">Plan 20</li>
+                              <li class="mix recovery policy accessible">Plan 21</li>
+                              <li class="mix recovery funding accessible">Plan 22</li>
+                              <li class="mix recovery policy accessible">Plan 23</li>
+                              <li class="mix recovery policy accessible">Plan 24</li>
+                              <li class="mix recovery policy accessible">Plan 25</li>
+                              <li class="mix recovery policy accessible">Plan 26</li>
+                              <li class="mix recovery nonprofit funding">Plan 27</li>
+                              <li class="mix recovery nonprofit policy accessible">Plan 28</li>
+
+                              <li class="gap"></li>
+                              <li class="gap"></li>
+                              <li class="gap"></li>
+                            </ul>
+                            <div class="rec-fail-message">No results found matching criteria</div>
+                          </div> <!-- rec-gallery -->
+                        </div>
+
+                        <!-- <div class="py-4 border-bottom">
                             <div class="text-right py-4">
                                 <a href="#section_1" data-scroll-to data-scroll-to-offset="50"
                                     class="text-dark text-sm font-weight-bold">Back to top<i
                                         class="fas fa-long-arrow-alt-up ml-2"></i></a>
                             </div>
-                        </div>
+                        </div> -->
+
                         <!-- BEGIN RECC ITEM -->
-                        <div style="background-color: #0973ba; padding:30px;border-radius: 10px 10px 0 0;">
+                        <!-- <div style="background-color: #0973ba; padding:30px;border-radius: 10px 10px 0 0;">
                             <h4 class="mb-3" style="color:#f5f9fb; font-family:'Oswald';font-size:2rem;"><i
                                     class="fas fa-clipboard-list"></i><span style="font-size:1.4rem;"> PREPARATION
-                                    #1</span></h4>
+                                    #2</span></h4> -->
                             <!-- <hr style="border-color:white; width:15%;margin-right:85%;border-width:2px;"/> -->
-                            <p class="mb-0" style="font-weight:400;color:white"><span
+                            <!-- <p class="mb-0" style="font-weight:400;color:white"><span
                                     style="font-weight:700;font-size:.8rem;">RECOMMENDATION: </span>Suspend
                                 immigration enforcement within disaster zones, including operations at Customs and
                                 Border Patrol check points, to ensure people move safe safely for evacuation and
@@ -426,23 +466,22 @@
                             <p style="font-weight:400;color:white; margin-top:1.2rem;"><span
                                     style="font-weight:700; font-size:.8rem;">PROPOSED IMPLEMENTERS:</span> United
                                 States Customs and Border Patrol</p>
-                        </div>
-
+                        </div> -->
 
                         <!-- BEGIN RATIONALE -->
-                        <div style="padding:30px;background:#f5f9fb;">
+                        <!-- <div style="padding:30px;background:#f5f9fb;">
                             <p class="mb-0" style="font-weight:400;"><strong>+ &nbsp; RATIONALE:</strong> </p>
+                        </div> -->
+
+
+
+
+                        <div class="text-right py-4">
+                            <a href="#section_1" data-scroll-to data-scroll-to-offset="50"
+                                class="text-dark text-sm font-weight-bold">Back to top<i
+                                    class="fas fa-long-arrow-alt-up ml-2"></i></a>
                         </div>
-
-
-
-
-                <div class="text-right py-4">
-                    <a href="#section_1" data-scroll-to data-scroll-to-offset="50"
-                        class="text-dark text-sm font-weight-bold">Back to top<i
-                            class="fas fa-long-arrow-alt-up ml-2"></i></a>
-                </div>
-            </div>
+                    </div>
             <!--END RECC ITEM-->
         </div>
         </div>
@@ -563,58 +602,9 @@
     <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/in-view/dist/in-view.min.js"></script>
     <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/mixitup-multifilter.min.js"></script>
+    <script src="./assets/js/filter.js"></script>
 
-    <script>
-        // Must bind a 'change' event handler to
-        // checkboxes, then interact with the mixer via
-        // its .filter() API methods.
-
-        var containerEl = document.querySelector('.container');
-        var checkboxGroup = document.querySelector('.checkbox-group');
-        var checkboxes = checkboxGroup.querySelectorAll('input[type="checkbox"]');
-        var allCheckbox = checkboxGroup.querySelector('input[value="all"]');
-
-        var mixer = mixitup(containerEl);
-
-        checkboxGroup.addEventListener('change', function(e) {
-            var selectors = [];
-            var checkbox;
-            var i;
-
-            if (e.target === allCheckbox && e.target.checked) {
-                // If the "all" checkbox was checked, uncheck all other checkboxes
-
-                for (i = 0; i < checkboxes.length; i++) {
-                    checkbox = checkboxes[i];
-
-                    if (checkbox !== allCheckbox) checkbox.checked = false;
-                }
-            } else {
-                // Another checkbox was changed, uncheck "all".
-
-                allCheckbox.checked = false;
-            }
-
-            // Iterate through all checkboxes, pushing the
-            // values of those that are checked into an array
-
-            for (i = 0; i < checkboxes.length; i++) {
-                checkbox = checkboxes[i];
-
-                if (checkbox.checked) selectors.push(checkbox.value);
-            }
-
-            // If there are values in the array, join it into a string
-            // using your desired logic, and send to the mixer's .filter()
-            // method, otherwise filter by 'all'
-
-            var selectorString = selectors.length > 0 ?
-                selectors.join(',') : // or '.' for AND logic
-                'all';
-
-            mixer.filter(selectorString);
-        });
-    </script>
 
     <!-- Page plugins -->
     <script src="../assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
