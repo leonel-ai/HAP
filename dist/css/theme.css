@@ -21869,8 +21869,9 @@ h4
 }
 .rec-gallery .plan-container .plan-tags
 {
-    padding: 30px; 
+    padding: 30px;
 
+    border-radius: 0 0 10px 10px; 
     background-color: gainsboro;
 }
 .rec-gallery .plan-container .plan-tags .tag-list

@@ -107,6 +107,7 @@ h1, h2, h3, h4 {
     .plan-tags {
       background-color:gainsboro;
       padding:30px;
+      border-radius: 0 0 10px 10px;
 
       .tag-list{
         padding-top:0 !important;
@@ -122,6 +123,7 @@ h1, h2, h3, h4 {
           .no-show { opacity: 0; }
         }
       }
+
     }
   }
 
