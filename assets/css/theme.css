@@ -21789,8 +21789,8 @@ h4
 {
     display: inline-block;
 
-    width: 100px;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0 auto;
 }
 .rec-gallery li
 {
@@ -21807,6 +21807,91 @@ h4
     height: 0;
     /* used in combination with text-align: justify to align gallery elements */
 
+    opacity: 0;
+}
+.rec-gallery .plan-container
+{
+    background-color: #f5f9fb;
+}
+.rec-gallery .plan-container .rec-item
+{
+    padding: 30px;
+
+    border-radius: 10px 10px 0 0; 
+    background-color: #0973ba;
+}
+.rec-gallery .plan-container .rec-item .rec-title
+{
+    font-family: 'Oswald';
+    font-size: 2rem; 
+
+    color: #f5f9fb;
+}
+.rec-gallery .plan-container .rec-item .rec-title .plan-num
+{
+    font-size: 1.4rem;
+}
+.rec-gallery .plan-container .rec-item hr
+{
+    width: 15%;
+    margin-right: 85%;
+
+    border-width: 2px; 
+    border-color: white;
+}
+.rec-gallery .plan-container .rec-item p
+{
+    font-weight: 400;
+
+    color: white;
+}
+.rec-gallery .plan-container .rec-item .rec-description span
+{
+    font-size: .8rem; 
+    font-weight: 700;
+}
+.rec-gallery .plan-container .rec-item .rec-orgs
+{
+    margin-top: 1.2rem;
+}
+.rec-gallery .plan-container .rec-item .rec-orgs span
+{
+    font-size: .8rem; 
+    font-weight: 700;
+}
+.rec-gallery .plan-container .rationale
+{
+    padding: 30px;
+}
+.rec-gallery .plan-container .rationale p
+{
+    font-weight: 400;
+}
+.rec-gallery .plan-container .plan-tags
+{
+    padding: 30px; 
+
+    background-color: gainsboro;
+}
+.rec-gallery .plan-container .plan-tags .tag-list
+{
+    padding-top: 0 !important;
+}
+.rec-gallery .plan-container .plan-tags .tag-list div
+{
+    padding-left: 0;
+}
+.rec-gallery .plan-container .plan-tags .tag-list span
+{
+    text-align: left;
+}
+.rec-gallery .plan-container .plan-tags .tag-list .badge-primary
+{
+    margin-bottom: 0; 
+    padding-left: .25em;
+}
+.rec-gallery .plan-container .plan-tags .tag-list .badge-primary .no-show
+{
     opacity: 0;
 }
 .rec-gallery .rec-fail-message
