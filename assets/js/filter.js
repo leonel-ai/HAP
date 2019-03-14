@@ -1,6 +1,9 @@
 var mixer = mixitup('#rec-container', {
   multifilter: {
     enable: true // enable the multifilter extension for the mixer
+  },
+  selectors: {
+    control: '[data-mixitup-control]'
   }
 });
 
