@@ -1,3 +1,7 @@
+function renderTotalShow(state) {
+  $('#count').html(state.totalShow);
+}
+
 var mixer = mixitup('#rec-container', {
   multifilter: {
     enable: true // enable the multifilter extension for the mixer
@@ -6,12 +10,7 @@ var mixer = mixitup('#rec-container', {
     control: '[data-mixitup-control]'
   },
   callbacks: {
-    onMixStart: function(state) {
-      $('#count').html(state.totalShow);
-    },
-    onMixEnd: function(state) {
-      $('#count').html(state.totalShow);
-    }
+    onMixEnd: renderTotalShow
   }
 });
 
@@ -148,21 +147,10 @@ var checkboxMultiFilter = {
   // Initialize checkboxFilter code
   checkboxMultiFilter.init();
 
+  var initialState = mixer.getState();
 
-  // breadcrumbs results output
-  // $(document).ready(function () {
-  //   var rowCount = $('#rec-container > li:visible').length;
-  //   document.getElementById('count').innerHTML = rowCount;
+  // Initialize active search results
+  renderTotalShow(initialState);
 
-  //   $(".custom-checkbox").click(function () {
-  //     var newCount = $('#rec-container > li:visible').length;
-
-  //     if (newCount !== rowCount) {
-  //       // rowCount = newCount;
-  //       // document.getElementById('count').innerHTML = rowCount;
-  //       console.log("we got here");
-  //     }
-  //   });
-  // });
 
 
