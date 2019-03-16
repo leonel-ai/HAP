@@ -21784,8 +21784,7 @@ h4
 
     text-align: justify;
 }
-.rec-gallery .mix,
-.rec-gallery .gap
+.rec-gallery .mix
 {
     display: inline-block;
 
@@ -21799,15 +21798,6 @@ h4
     margin-bottom: 1.6em;
 
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-}
-.rec-gallery li.gap
-{
-    display: inline-block; 
-
-    height: 0;
-    /* used in combination with text-align: justify to align gallery elements */
-
-    opacity: 0;
 }
 .rec-gallery .plan-container
 {

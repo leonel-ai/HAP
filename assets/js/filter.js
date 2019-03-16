@@ -4,6 +4,14 @@ var mixer = mixitup('#rec-container', {
   },
   selectors: {
     control: '[data-mixitup-control]'
+  },
+  callbacks: {
+    onMixStart: function(state) {
+      $('#count').html(state.totalShow);
+    },
+    onMixEnd: function(state) {
+      $('#count').html(state.totalShow);
+    }
   }
 });
 
@@ -139,4 +147,22 @@ var checkboxMultiFilter = {
 
   // Initialize checkboxFilter code
   checkboxMultiFilter.init();
+
+
+  // breadcrumbs results output
+  // $(document).ready(function () {
+  //   var rowCount = $('#rec-container > li:visible').length;
+  //   document.getElementById('count').innerHTML = rowCount;
+
+  //   $(".custom-checkbox").click(function () {
+  //     var newCount = $('#rec-container > li:visible').length;
+
+  //     if (newCount !== rowCount) {
+  //       // rowCount = newCount;
+  //       // document.getElementById('count').innerHTML = rowCount;
+  //       console.log("we got here");
+  //     }
+  //   });
+  // });
+
 
