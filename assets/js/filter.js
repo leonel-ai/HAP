@@ -12,7 +12,7 @@ function renderActiveFilters() {
       return activeControl.getAttribute('data-label');
   });
 
-  activeFilters.innerHTML = activeLabels.join(', ');
+  activeFilters.innerHTML = '<div class="badge badge-lg badge-pill badge-danger">' + activeLabels.join('</div><div class="badge badge-lg badge-pill badge-danger">') + '</div> ';
 }
 
 var mixer = mixitup('#rec-container', {
