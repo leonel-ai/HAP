@@ -21774,6 +21774,11 @@ h4
     padding-left: 2rem;
 }
 
+#results .active-filters > .badge
+{
+    margin-right: .5em;
+}
+
 .rec-gallery
 {
     position: relative; 
