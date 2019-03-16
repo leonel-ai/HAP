@@ -2,6 +2,19 @@ function renderTotalShow(state) {
   $('#count').html(state.totalShow);
 }
 
+function renderActiveFilters() {
+  var activeControls = Array.from(document.querySelectorAll('.mixitup-control-active, .custom-control-input:checked '));
+  var activeFilters = document.querySelector('.active-filters');
+
+  activeFilters.innerHTML = '';
+
+  activeLabels = activeControls.map(function(activeControl) {
+      return activeControl.getAttribute('data-label');
+  });
+
+  activeFilters.innerHTML = activeLabels.join(', ');
+}
+
 var mixer = mixitup('#rec-container', {
   multifilter: {
     enable: true // enable the multifilter extension for the mixer
@@ -10,7 +23,10 @@ var mixer = mixitup('#rec-container', {
     control: '[data-mixitup-control]'
   },
   callbacks: {
-    onMixEnd: renderTotalShow
+    onMixEnd: function(state) {
+      renderTotalShow(state),
+      renderActiveFilters();
+    }
   }
 });
 
