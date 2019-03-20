@@ -12,7 +12,8 @@ function renderActiveFilters() {
       return activeControl.getAttribute('data-label');
   });
 
-  activeFilters.innerHTML = '<div class="badge badge-lg badge-pill badge-danger">' + activeLabels.join('</div><div class="badge badge-lg badge-pill badge-danger">') + '</div> ';
+  activeFilters.innerHTML = '<div class="badge badge-lg badge-pill badge-danger">' +
+    activeLabels.join('</div><div class="badge badge-lg badge-pill badge-danger">') + '</div> ';
 }
 
 var mixer = mixitup('#rec-container', {
@@ -42,7 +43,9 @@ var checkboxMultiFilter = {
     // The "init" method will run on document ready and cache any jQuery objects we will need.
 
     init: function(){
-      var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "checkboxFilter" object so that we can share methods and properties between all parts of the object.
+      // Best practice: in each method assign "this" to the variable "self" so that it remains scope-agnostic.
+      // Use it to refer to the parent "checkboxFilter" object so that we can share methods and properties between all parts of the object.
+      var self = this;
 
       self.$filters = $('#filters');
       self.$filterGroups = $('checkbox-group');
@@ -67,13 +70,6 @@ var checkboxMultiFilter = {
       self.$filterGroups.filter('.checkboxes').on('change', function() {
       	self.parseFilters();
     	});
-
-    // self.$container.on('click', 'input', function(e){
-    //   self.parseFilters();
-    // });
-    // self.$container.on('change', function(){
-    //   self.parseFilters();
-    // });
   },
 
     // The parseFilters method checks which filters are active in each group:

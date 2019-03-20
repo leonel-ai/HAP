@@ -21890,32 +21890,3 @@ h4
 {
     opacity: 0;
 }
-.rec-gallery .rec-fail-message
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    transition: 150ms; 
-    text-align: center;
-    pointer-events: none;
-
-    opacity: 0;
-}
-.rec-gallery .rec-fail-message:before
-{
-    display: inline-block;
-
-    height: 100%; 
-
-    content: '';
-    vertical-align: middle;
-}
-.rec-gallery .mixitup-container-failed .rec-fail-message
-{
-    pointer-events: auto; 
-
-    opacity: 1;
-}
